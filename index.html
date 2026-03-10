@@ -291,7 +291,7 @@
     }
 
     async function fetchTranscript(videoId) {
-      const res = await fetch('/api/transcript', {
+      const res = await fetch('https://youtube-transcript.wkchanneljapan.workers.dev', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ videoId }),
